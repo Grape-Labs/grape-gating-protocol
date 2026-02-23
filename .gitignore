@@ -1,0 +1,9 @@
+# .gitignore
+target/
+node_modules/
+.anchor/
+test-ledger/
+**/*.env
+**/id.json          # ← NEVER push your keypairs!
+target/deploy/*-keypair.json   # ← especially this one
+.npm-cache
