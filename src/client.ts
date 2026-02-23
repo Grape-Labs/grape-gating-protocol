@@ -260,7 +260,7 @@ export class GpassClient {
   async fetchGate(gateId: PublicKey): Promise<Gate | null> {
     const [gatePda] = await findGatePda(gateId);
     try {
-      return (await this.program.account.gate.fetch(gatePda)) as unknown as Gate;
+      return (await this.program.account.Gate.fetch(gatePda)) as unknown as Gate;
     } catch {
       return null;
     }
@@ -276,7 +276,7 @@ export class GpassClient {
     const [gatePda] = await findGatePda(gateId);
     const [checkRecordPda] = await findCheckRecordPda(gatePda, user);
     try {
-      return (await this.program.account.gateCheckRecord.fetch(
+      return (await this.program.account.GateCheckRecord.fetch(
         checkRecordPda
       )) as unknown as GateCheckRecord;
     } catch {
@@ -290,7 +290,7 @@ export class GpassClient {
   async fetchGatesByAuthority(authority: PublicKey): Promise<
     { publicKey: PublicKey; account: Gate }[]
   > {
-    const accounts = await this.program.account.gate.all([
+    const accounts = await this.program.account.Gate.all([
       {
         memcmp: {
           offset: 8 + 1 + 32, // discriminator + version + gateId

@@ -1,5 +1,5 @@
 import { PublicKey } from "@solana/web3.js";
-import { GPASS_PROGRAM_ID, VINE_REPUTATION_PROGRAM_ID, GRAPE_VERIFICATION_PROGRAM_ID } from "../types";
+import { GPASS_PROGRAM_ID, VINE_REPUTATION_PROGRAM_ID, GRAPE_VERIFICATION_PROGRAM_ID } from "./types";
 
 // ─────────────────────────────────────────────────────────
 // GPASS PDAs

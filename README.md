@@ -1,6 +1,6 @@
-# @grape-protocol/gpass-sdk
+# @grapenpm/grape-access-sdk
 
-TypeScript SDK for the **Grape Gating Protocol** — composable access control for Solana DAOs.
+TypeScript SDK for the **Grape Access/Gating Protocol** — composable access control for Solana DAOs.
 
 **Program ID:** `GPASSzQQF1H8cdj5pUwFkeYEE4VdMQtCrYtUaMXvPz48`
 
@@ -9,7 +9,7 @@ TypeScript SDK for the **Grape Gating Protocol** — composable access control f
 ## Install
 
 ```bash
-npm install @grape-protocol/gpass-sdk
+npm install @grapenpm/grape-access-sdk
 # peer deps
 npm install @coral-xyz/anchor @solana/web3.js
 ```
@@ -19,7 +19,7 @@ npm install @coral-xyz/anchor @solana/web3.js
 ## Quick Start
 
 ```typescript
-import { GpassClient, GateCriteriaFactory, GateTypeFactory, VerificationPlatform } from "@grape-protocol/gpass-sdk";
+import { GpassClient, GateCriteriaFactory, GateTypeFactory, VerificationPlatform } from "@grapenpm/grape-access-sdk";
 import { AnchorProvider } from "@coral-xyz/anchor";
 import { Keypair } from "@solana/web3.js";
 
@@ -168,7 +168,7 @@ import {
   findVineReputationPda,
   findGrapeIdentityPda,
   findGrapeLinkPda,
-} from "@grape-protocol/gpass-sdk";
+} from "@grapenpm/grape-access-sdk";
 
 // Gate PDA
 const [gatePda] = await findGatePda(gateId);

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// @grape-protocol/gpass-sdk
+// @grapenpm/grape-access-sdk
 // Grape Gating Protocol SDK
 // Program: GPASSzQQF1H8cdj5pUwFkeYEE4VdMQtCrYtUaMXvPz48
 // ─────────────────────────────────────────────────────────────────────────────

@@ -1,9 +1,9 @@
 {
-  "name": "@grape-protocol/gpass-sdk",
+  "name": "@grapenpm/grape-access-sdk",
   "version": "0.1.0",
-  "description": "SDK for the Grape Gating Protocol (GPASS) - composable access control for Solana DAOs",
+  "description": "SDK for the Grape Access & Gating Protocol (GPASS) - composable access control for Solana DAOs",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
@@ -42,6 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/grape-protocol/gpass-sdk"
+    "url": "https://github.com/Grape-Labs/grape-gating-protocol"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
